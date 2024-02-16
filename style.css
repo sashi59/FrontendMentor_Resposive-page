@@ -1,0 +1,118 @@
+
+@font-face {
+    font-family: interS;
+    src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: interS;
+    color: #fff;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.box{
+    background-color: #222;
+    padding: 2vw 2vw;
+    border-radius: 12px;
+    position: relative;
+    width: 20vw;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.info img{
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+.info h4{
+    font-size: 20px;
+}
+.info .yellow-para{
+    color: yellow;
+    font-size: 10px;
+    margin-top: -2px;
+}
+.info p{
+    font-size: 10px;
+    margin-top: 13px;
+    margin-bottom: 8px;
+}
+.btns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 12px;
+}
+.btns .btn{
+    background-color: #333;
+    padding: 5px 10px;
+    width: 100%;
+    text-align: center;
+    border-radius: 6px;
+}
+.btns .btn a{
+    text-decoration: none;
+    font-size: 14px;
+}
+.attribution{
+    margin-top: 10px;
+    margin-bottom: -15px;
+    font-size: 6.5px;
+}
+
+@media (max-width:700px) {
+    .box{
+    padding: 5vw 5vw;
+    border-radius: 10px;
+    width: 40vw;
+    }
+    .info img{
+        height: 50px;
+    }
+    .info h4{
+        font-size: 16px;
+        margin: 5px 0;
+    }
+    .info .yellow-para{
+        font-size: 8.5px;
+        margin-top: -2px;
+    }
+    .info p{
+        font-size: 8.5px;
+        margin-top: 13px;
+        margin-bottom: 8px;
+    }
+    
+    .btns .btn{
+
+        padding: 4px 8px;
+    }
+    .btns .btn a{
+
+        font-size: 10px;
+    }
+    .attribution{
+        margin-top: 10px;
+        margin-bottom: -15px;
+        font-size: 6px;
+    }
+}
